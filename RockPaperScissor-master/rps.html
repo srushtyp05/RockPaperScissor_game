@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+        div.choices{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        img{
+            height: 200px;
+            width: 200px;
+           
+           
+            padding: 5px;
+            transition: 0.3s ease-in;
+            margin: 0px 50px;
+            
+        }
+        img:hover{
+            cursor: pointer;
+            box-shadow: black 0px 4px 12px;
+        }
+        footer{
+            display: flex;
+            align-items: initial;
+            justify-content: space-between;
+            background-color: rgb(65, 155, 110);
+            padding: 10px 5px;
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+           
+        }
+        footer div.name{
+            font-size: 20px;
+        }
+        footer div.icons{
+            display: flex;
+        }
+        footer div.icons i{
+            margin: 0px 5px;
+            font-size: large;
+        }
+        footer div.icons i:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body background="images/image6.png" style="color: white; font-size: small; text-align: center;" >
+    <div class="board">
+        <h1>User : <span id="user">0</span></h1><br>
+        <h1>Computer : <span id="computer">0</span></h1>
+    </div>
+    <div class="choices">
+    <img src="https://adsk3003.github.io/Rock_paper_scissors/img/rock.png"alt="rock" id="rock">
+    <img src="https://icon-library.com/images/spock-icon/spock-icon-3.jpg" alt="paper" id="paper">
+   <img src="https://adsk3003.github.io/Rock_paper_scissors/img/scissors.png" alt="scissor" id="scissor">
+   
+</div><br><br>
+<div class="result">
+    <h1></h1>
+</div>
+<footer>
+    <div class="name">Shaily Patel </div>
+    <div class="icons">
+      <i style="color: purple;" class="fa fa-instagram"></i>
+        <i style="color: dodgerblue;" class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+    </div>
+    <script src="rps.js"></script>
+    
+</footer>
+   
+</body>
+</html>
